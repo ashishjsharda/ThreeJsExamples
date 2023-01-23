@@ -564,6 +564,10 @@ document.body.appendChild(renderer.domElement);
 const camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const scene = new _three.Scene();
 const geometry = new _three.BoxGeometry();
+const axesHelper = new _three.AxesHelper(5);
+scene.add(axesHelper);
+//const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+camera.position.z = 5;
 renderer.render(scene, camera);
 
 },{"three":"ktPTu"}],"ktPTu":[function(require,module,exports) {
